@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: codingpot/github-org-member-manage-action@v1
         with:
-          gh_token: ${{ secrets.GH_TOKEN }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
           mode: write
           members_filepath: members.yaml
       - uses: creyD/prettier_action@v4.0
